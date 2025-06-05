@@ -1,0 +1,15 @@
+{
+  "type": "chat",
+  "input_variables": [
+    "context",
+    "question"
+  ],
+  "messages": [
+    {
+      "template": "You are the helpful, respectful and honest assistant, Answer the question based on context.\ncontext: {context}\n"
+    },
+    {
+      "template": "\n{question}\n"
+    }
+  ]
+}
