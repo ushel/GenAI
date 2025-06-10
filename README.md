@@ -1,4 +1,4 @@
-WOrking chat bot is in folder named RAG_Application_Using_function_tools_agents
+Working chat bot is in folder named RAG_Application_Using_function_tools_agents
 
 to run it please install requirements 
 
