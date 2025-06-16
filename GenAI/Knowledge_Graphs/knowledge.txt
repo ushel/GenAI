@@ -1,0 +1,104 @@
+Knowledge Graphs - Data Structure, which stores information in nodes relationship between those nodes.
+
+Nodes are data records 
+
+Small Graphs contains single node with no relationships     person
+                                                           "utkarsh"    
+
+
+     person            knows since 2017             person
+    "utkarsh" ------------------------------------->"Vikas"
+
+
+    (person) means nodes
+
+    (person), (person)
+
+    (person)--[Knows]->(person)  text representation
+
+    (person) is nodes and relationship is [knows] between 2 person as shown above.
+
+    this relationships are also a data record
+
+    we have person utkarsh and person vikas and relationship that person utkarsh knows the 
+
+    person vikas and knows since 2017.
+
+    Nodes are often called as vertices and relationship are often called as edge.
+
+    Relationship is really a pair of nodes and then information about that pair.
+
+
+    The nodes are "in" a relationship, which itself has properties.
+
+    unlike an OO-perspective or even relational model, where the entity records would "know"
+
+    about each other with different references or foreign keys.
+
+    This has amazing implications for modelling and schema. Graph types are composable!
+
+    suppose their is a person name utkarsh and he knows another person name vikas, what they have in common?
+
+    suppose they have IIMK course in common
+
+
+
+    
+             person            knows since 2017             person
+            "utkarsh" ------------------------------------->"Vikas"
+                |                                              |
+        Teaches |                                              |studies
+                |                                              |  
+                |                                              | 
+                |-------------->IIMK course<-------------------|
+
+
+Text representation:- 
+
+        (person)-[Teaches]->(course)<-[studies]-(person)
+
+Does this means utkarsh is a "teacher"? and vikas is a "student"?  ---> you can say, without adding those extra labels 
+
+to the people themselves because utkarsh is teacher because he is teaching and vikas might be student because he studies.
+
+without adding extra labels to the entity themselves, you can use relationship for further qualifying what that people are,
+
+what their roles are in a graph.
+
+
+    here in above diagram we have 3 nodes
+
+    (person), (person), (IIMK course)
+
+
+
+
+    Formally nodes have labels
+
+    (person), (course), (person)
+
+    labels are the ways of grouping multiple nodes together.
+
+    so for everybody which is person will give person label to it and for everybody which is course will give course label.
+
+    Data records also have values, those values are properties, they are key value properties that are stored inside of the node 
+
+    so we know that the person utkarsh actually has a property called name with the value of property is utkarsh.
+
+    also for person vikas there is name property and value of property is vikas.
+
+    also for course, there is title property IIMK
+
+    because the relationships are data records, there is a direction, a type and also properties. for relationships we can add extra information by adding, properties to them.
+
+
+
+    What is knowledge Graph?
+
+    A knowledge graph is a database that stores information in nodes and relationships.
+
+    Both nodes and relationships can have properties, key-value pairs.
+
+    Nodes can be given labels to group them together.
+
+    Relationship always have a type and a direction.
