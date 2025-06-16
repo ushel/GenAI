@@ -2,7 +2,7 @@ from langchain.tools import tool
 from langchain.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain.schema import Document
-import json
+import json 
 def get_retriever_tool(vectordb):
     retriever = vectordb.as_retriever()
 

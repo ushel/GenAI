@@ -25,3 +25,4 @@ transformers
 hf_xet
 accelerate>=0.26.0
 panel
+neo4j
